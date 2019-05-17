@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-import { setLocation } from '../../store/actions/locationActions'
+import { setLocation } from '../../store/actions/placeActions'
 
 class GetGeolocation extends Component {
     state = {
@@ -22,7 +22,7 @@ class GetGeolocation extends Component {
     }
     render = () => {
       return(
-          <div className="location">
+          <div className="coords">
           <button onClick={this.clickHandler}>Get Location</button>
           </div>
       )
@@ -32,7 +32,7 @@ class GetGeolocation extends Component {
   
   const mapStateToProps = (state) => {
     return {
-        location: state.location
+        place: state.place
     }
   }
   

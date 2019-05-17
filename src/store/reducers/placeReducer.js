@@ -1,6 +1,6 @@
 const initialState = {
-  location: '',
-  locationType: ''
+  location: 'Warsaw',
+  locationType: 'city'
 }
 
 const localizationReducer = (state = initialState, action) => {

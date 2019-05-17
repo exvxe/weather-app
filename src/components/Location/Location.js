@@ -1,29 +1,20 @@
-import React, { Component} from 'react';
-import { connect } from 'react-redux'
+import React from 'react';
 
 import GetGeolocation from './GetGeolocation'
 import GetCity from './GetCity'
 
-class Location extends Component {
-    render() {
+const Location = () => {
       return(
-          <div className="location">
-          {this.props.location.location}
+          <div className="location-wrapper">
           <GetGeolocation/>
           <GetCity/>
           </div>
       )
     }
-  }
   
   
-  const mapStateToProps = (state) => {
-    return {
-        location: state.location
-    }
-  }
   
   
-  export default connect(mapStateToProps) (Location)
+  export default Location
   
   

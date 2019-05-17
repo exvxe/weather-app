@@ -29,12 +29,11 @@ const store = createStore(
 
 store.subscribe(throttle(() => {
     saveState({
-      location: store.getState().location,
+      place: store.getState().place,
     });
   }, 1000));
   
 ReactDOM.render(
     <Provider store={store}><App /></Provider>, document.getElementById("root")
 );
-registerServiceWorker();
 

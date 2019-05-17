@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-import { setLocation } from '../../store/actions/locationActions'
+import { setLocation } from '../../store/actions/placeActions'
 
 class GetCity extends Component {
     state = {
@@ -25,7 +25,7 @@ class GetCity extends Component {
                 City:
                 <input type="text" id="location" onChange={this.handleChange} />
               </label>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Set" />
             </form>
           </div>
       )
@@ -35,7 +35,7 @@ class GetCity extends Component {
   
   const mapStateToProps = (state) => {
     return {
-        location: state.location
+      place: state.location
     }
   }
   
