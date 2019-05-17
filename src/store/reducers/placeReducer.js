@@ -1,6 +1,6 @@
 const initialState = {
   location: '',
-  locationType: 'coords'
+  locationType: ''
 }
 
 const localizationReducer = (state = initialState, action) => {
