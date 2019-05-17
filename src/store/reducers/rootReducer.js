@@ -1,10 +1,10 @@
 import weatherReducer from './weatherReducer'
-import localizationReducer from './localizationReducer'
+import locationReducer from './locationReducer'
 import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({
     weather: weatherReducer,
-	localization: localizationReducer
+	location: locationReducer
 })
 
 export default rootReducer;
